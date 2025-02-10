@@ -1,0 +1,16 @@
+footer {
+  background: linear-gradient(45deg, #ff416c, #ff4b2b);
+  padding: 15px 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  position: static;
+}
+ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+li a {
+  color: white;
+  text-decoration: none;
+}
