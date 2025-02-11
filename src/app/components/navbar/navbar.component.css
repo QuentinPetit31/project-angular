@@ -13,3 +13,7 @@ li a {
   color: white;
   text-decoration: none;
 }
+img {
+  width: 20%;
+  border-radius: 50%;
+}

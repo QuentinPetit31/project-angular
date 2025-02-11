@@ -1,0 +1,19 @@
+.friend-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+  justify-items: center;
+  margin-top: 30px;
+}
+
+@media (max-width: 1024px) {
+  .friend-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .friend-list {
+    grid-template-columns: 1fr;
+  }
+}

@@ -4,6 +4,7 @@ footer {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   width: 100%;
   position: static;
+  color: white;
 }
 ul {
   list-style: none;
