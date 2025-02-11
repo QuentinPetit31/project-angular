@@ -1,0 +1,40 @@
+<!-- <input type="text" [(ngModel)]="inputTexte" required />
+<p>{{ inputTexte }}</p>
+<button [disabled]="inputTexte == ''" (click)="onClick($event)">Reset</button>
+
+<button [disabled]="inputTexte == ''" (click)="addFriend()">
+  Ajouter un ami
+</button>
+<p *ngif="addFriend == true" ;else noFriend></p> -->
+
+<div id="list-friends" class="container-fluid">
+  <h1>List Friends (*ngIf : Conditional Rendering)</h1>
+  <!-- <input (input)="onUpdateFriendsList($event)" type="text" class="form-control w-50 m-auto" placeholder="Nom Ami" aria-label="Username" > -->
+  <input
+    [(ngModel)]="listFriendsInputText"
+    type="text"
+    class="form-control w-50 m-auto"
+    placeholder="Nom Ami"
+    aria-label="Username"
+  />
+  <p class="text-center">{{ listFriendsInputText }}</p>
+  <h3 *ngIf="listFriendsCreated == true; else noFriends" class="text-center">
+    {{ listFriendsCreationStatus }}
+  </h3>
+  <!-- Vivement *ngElse  -->
+  <ng-template #noFriends>
+    Seuls les mecs cools ont des amis.
+    <h2>Grosse folle.</h2>
+  </ng-template>
+
+  <button
+    class="btn btn-success ms-5"
+    (click)="onAddingFriends()"
+    [disabled]="listFriendsAuth"
+  >
+    Ajouter Ami
+  </button>
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+    <app-one-friend></app-one-friend>
+  </div>
+</div>
