@@ -9,7 +9,7 @@
     <li
       *ngFor="let tableau of nombreClique; let i = index"
       [ngStyle]="{ 'background-color': i >= 4 ? 'blue' : 'chartreuse' }"
-      [ngClass]="{ 'white-text': i >= 4 }"
+      [ngClass]="{ 'texte-blanc': i >= 4 }"
     >
       {{ tableau }}
     </li>

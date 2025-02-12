@@ -5,6 +5,7 @@ footer {
   width: 100%;
   position: static;
   color: white;
+  text-align: center;
 }
 ul {
   list-style: none;
@@ -14,4 +15,8 @@ ul {
 li a {
   color: white;
   text-decoration: none;
+}
+img {
+  width: 12%;
+  border-radius: 50%;
 }

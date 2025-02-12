@@ -11,10 +11,11 @@ button {
   color: white;
   margin-top: 3vw;
   font-size: large;
-  border-radius: 10px;
+  border-radius: 10vw;
+  border-color: aliceblue;
 }
 
-.white-text {
+.texte-blanc {
   color: white;
 }
 
