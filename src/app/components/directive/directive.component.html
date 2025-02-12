@@ -1,0 +1,17 @@
+<div class="tableau">
+  <button (click)="repeterAffichage()">
+    {{ afficherDetails ? "Masquer Détails" : "Afficher Détails" }}
+  </button>
+
+  <p *ngIf="afficherDetails">Détails affichés ici !</p>
+
+  <ul>
+    <li
+      *ngFor="let tableau of nombreClique; let i = index"
+      [ngStyle]="{ 'background-color': i >= 4 ? 'blue' : 'chartreuse' }"
+      [ngClass]="{ 'white-text': i >= 4 }"
+    >
+      {{ tableau }}
+    </li>
+  </ul>
+</div>

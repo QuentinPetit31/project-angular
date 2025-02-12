@@ -1,0 +1,23 @@
+.tableau {
+  text-align: center;
+  list-style-type: none;
+}
+
+button {
+  background: linear-gradient(45deg, #ff416c, #ff4b2b);
+  padding: 15px 0;
+  width: 100%;
+  position: static;
+  color: white;
+  margin-top: 3vw;
+  font-size: large;
+  border-radius: 10px;
+}
+
+.white-text {
+  color: white;
+}
+
+ul {
+  list-style-type: none;
+}
