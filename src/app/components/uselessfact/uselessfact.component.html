@@ -1,1 +1,7 @@
-<p>uselessfact works!</p>
+<div *ngIf="isLoading">Chargement...</div>
+<div *ngIf="errorMessage">{{ errorMessage }}</div>
+<div *ngIf="fact">
+  <h2>Fait inutile du jour :</h2>
+  <p>{{ fact }}</p>
+  <button (click)="loadFact()">🔄 Nouveau fait</button>
+</div>
