@@ -1,6 +1,38 @@
 <div class="add-article-container">
   <h3>Ajouter un article ou un brouillon</h3>
 
-  <button (click)="onArticleAdded()">Ajouter comme Article</button>
-  <button (click)="onBrouillonAdded()">Ajouter comme Brouillon</button>
+  <!-- Champ pour le titre -->
+  <label for="titre">Titre :</label>
+  <br />
+
+  <input
+    type="text"
+    id="title"
+    [(ngModel)]="titre"
+    placeholder="Entrez le titre"
+  />
+  <br />
+  <!-- Champ pour le contenu -->
+  <label for="contenu">Contenu :</label>
+  <br />
+  <textarea
+    id="content"
+    [(ngModel)]="contenu"
+    placeholder="Entrez le contenu"
+  ></textarea>
+  <br />
+
+  <!-- Boutons pour ajouter un article ou un brouillon -->
+  <input
+    type="submit"
+    value="Ajouter comme Article"
+    (click)="onArticleAdded()"
+  />
+  <br />
+
+  <input
+    type="submit"
+    value="Ajouter comme Brouillon"
+    (click)="onBrouillonAdded()"
+  />
 </div>

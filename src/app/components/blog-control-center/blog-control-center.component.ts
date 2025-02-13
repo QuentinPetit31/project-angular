@@ -25,7 +25,7 @@ export class BlogControlCenterComponent {
       id: 1,
       title: 'Mon premier article',
       content: 'Ceci est le contenu de mon premier article.',
-      author: 'Auteur 1',
+      author: 'Eddie',
       date: new Date('2023-01-01'),
       type: 'article',
     },
@@ -33,7 +33,7 @@ export class BlogControlCenterComponent {
       id: 2,
       title: 'Mon deuxième article',
       content: 'Ceci est le contenu de mon deuxième article.',
-      author: 'Auteur 2',
+      author: 'Murphy',
       date: new Date('2023-02-01'),
       type: 'brouillon',
     },
@@ -47,7 +47,15 @@ export class BlogControlCenterComponent {
     date: Date;
     type: string;
   }) {
-    //Ici logique qui contruit un objet article et qui le rajoute au tableau
+    const newArticle: Article = {
+      id: this.articles.length + 1,
+      title: articleData.title,
+      content: articleData.content,
+      author: articleData.author,
+      date: articleData.date,
+      type: articleData.type,
+    };
+    this.articles.push(newArticle);
   }
 
   // Gestion des brouillons ajoutés

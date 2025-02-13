@@ -1,9 +1,10 @@
 import { CommonModule } from '@angular/common';
 import { Component, EventEmitter, Output } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-add-article',
-  imports: [CommonModule],
+  imports: [CommonModule, FormsModule],
   templateUrl: './add-article.component.html',
   styleUrl: './add-article.component.css',
 })
