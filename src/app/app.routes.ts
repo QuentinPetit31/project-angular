@@ -6,6 +6,8 @@ import { DirectiveComponent } from './components/directive/directive.component';
 import { BlogControlCenterComponent } from './components/blog-control-center/blog-control-center.component';
 import { UselessFactComponent } from './components/uselessfact/uselessfact.component';
 import { RegisterComponent } from './register/register.component';
+import { LoginComponent } from './login/login.component';
+import { UserDisplayComponent } from './components/user-display/user-display.component';
 
 export const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -14,5 +16,7 @@ export const routes: Routes = [
   { path: 'directive', component: DirectiveComponent },
   { path: 'BlogControlCenterComponent', component: BlogControlCenterComponent },
   { path: 'uselessfact', component: UselessFactComponent },
+  { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
+  { path: 'userdisplay', component: UserDisplayComponent },
 ];
