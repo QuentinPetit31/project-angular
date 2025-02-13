@@ -5,6 +5,7 @@ import { dataBComponent } from './components/data-b/data-b.component';
 import { DirectiveComponent } from './components/directive/directive.component';
 import { BlogControlCenterComponent } from './components/blog-control-center/blog-control-center.component';
 import { UselessFactComponent } from './components/uselessfact/uselessfact.component';
+import { RegisterComponent } from './register/register.component';
 
 export const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -13,4 +14,5 @@ export const routes: Routes = [
   { path: 'directive', component: DirectiveComponent },
   { path: 'BlogControlCenterComponent', component: BlogControlCenterComponent },
   { path: 'uselessfact', component: UselessFactComponent },
+  { path: 'register', component: RegisterComponent },
 ];
